@@ -1,6 +1,6 @@
 let telegram_bot_id = '6190131547:AAE_WAKVQmExNBmq-6Df6R2-7SIUWcBbXMg';
 
-let chat_id = 299035779;
+let chat_id = 962815011;
 let message;
 let ready = function () {
   let home_project, interior_design, consultation, interest = [], u_name, email, social, number;
