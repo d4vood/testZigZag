@@ -4406,9 +4406,6 @@ p {
 .itcss__indicator_active {
     opacity: 0.7!important;
 }
-.itcss__btn {
-    display: none;
-}
 .itcss span.img-service {
     width: 60%;
     display: inline-block;
