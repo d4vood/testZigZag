@@ -4944,24 +4944,21 @@ footer::before {
 
 .button {
     display: inline-block;
-    padding: 0.5em 1em;
-    padding-left: 0;
+    padding-left: 15px;
     background: transparent;
     font-family: 'century-gothic', sans-serif !important;
     font-size: 22px;
     cursor: pointer;
     border: none;
-    margin: 10px;
     -webkit-transition: background 0.3s;
     -moz-transition: background 0.3s;
     transition: background 0.3s;
-    margin-left: 0;
     color: #C7C7C7;
     -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+     -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .button:hover {

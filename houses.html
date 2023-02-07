@@ -25,6 +25,7 @@
 	<link rel="image_src" type="image/jpeg" href="" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="css/simple-adaptive-slider.css">
 
 
 	<meta property="og:description" content="Архитектурная студия ZigZag. Проектирование современных домов. | ZigZag" />
@@ -82,14 +83,28 @@
 
 <section id="content" style="overflow-y: hidden;">
 	<div class="container">
-		<div class="row row-line " style="overflow: hidden; padding-top: 180px">
+		<div class="row row-line" style="overflow: hidden; padding-top: 180px">
 		  	<h3 class="parallax" style="margin-bottom: 0">Проекты домов</h3>
 			<div class="btn_group">
-				<div class="button-group filters-button-group" style="margin-bottom: 34px" >
-					<button class="button is-checked check-btn" data-filter="*">Все</button>
-					<button class="button" data-filter=".2021">2021</button>
-					<button class="button" data-filter=".2022">2022</button>
+				<div style="display: flex; align-items: center">
+					<button id="slideBack" class="slide_btn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+					<div class="button-group filters-button-group" id="container">
+						<ul>
+							<button class="button is-checked check-btn" data-filter="*">Все</button>
+							<button class="button" data-filter=".2013">2013</button>
+							<button class="button" data-filter=".2015">2015</button>
+							<button class="button" data-filter=".2016">2016</button>
+							<button class="button" data-filter=".2017">2017</button>
+							<button class="button" data-filter=".2018">2018</button>
+							<button class="button" data-filter=".2019">2019</button>
+							<button class="button" data-filter=".2020">2020</button>
+							<button class="button" data-filter=".2021">2021</button>
+							<button class="button" data-filter=".2022">2022</button>
+						</ul>
+					</div>
+					<button id="slide" class="slide_btn" type="button"><i class="fa-solid fa-chevron-right"></i></button>
 				</div>
+
 				<div class="BtnIcons" style="margin-bottom: 34px" >
 					<button class="button" data-tooltip="Эскизная Концепция">
 						<i class="fa-solid fa-pen-ruler" style="font-size: 25px"></i>
@@ -104,27 +119,171 @@
 			</div>
 
 <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
-    <article class="2021 item-grid" style="position: relative;">
+	<article class="2013 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/01_dom/01.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2015 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/02_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2016 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/03_dom/01.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2017 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/04_dom/04.png" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2018 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/05_dom/05.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2018 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/06_dom/01.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2018 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/07_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2019 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/08_dom/03.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2019 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/09_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2019 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/10_dom/03.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2020 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/11_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2020 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/12_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2020 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/13_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2021 item-grid" style="position: relative;">
     	  <a class="article-content" href="https://architect-zigzag.ru/project-1.html">
-    	  	<div class="article-img"><img src="images/terraevsa-2.jpg" class="img-responsive" /></div>
+    	  	<div class="article-img"><img src="images/14_dom/07.jpg" class="img-responsive" /></div>
     	  	<div class="article-info">
     	  		Villa Terraevsa
     	  		<span>545 м²</span>
     	  	</div>
     	  </a>
     </article>
+	<article class="2021 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+			<div class="article-img"><img src="images/15_dom/02.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Villa Terraevsa
+				<span>545 м²</span>
+			</div>
+		</a>
+	</article>
     <article class="2022 item-grid" style="position: relative;">
         <a class="article-content" href="https://architect-zigzag.ru/project-2.html">
-    	  	<div class="article-img"><img src="images/chern-2.jpg" class="img-responsive" /></div>
+    	  	<div class="article-img"><img src="images/16_dom/01.jpg" class="img-responsive" /></div>
     	  	<div class="article-info">
     	  		Черноморская вилла
     	  		<span>300 м²</span>
     	  	</div>
     	  </a>
     </article>
+	<article class="2022 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-2.html">
+			<div class="article-img"><img src="images/17_dom/01.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Черноморская вилла
+				<span>300 м²</span>
+			</div>
+		</a>
+	</article>
+	<article class="2022 item-grid" style="position: relative;">
+		<a class="article-content" href="https://architect-zigzag.ru/project-2.html">
+			<div class="article-img"><img src="images/18_dom/01.jpg" class="img-responsive" /></div>
+			<div class="article-info">
+				Черноморская вилла
+				<span>300 м²</span>
+			</div>
+		</a>
+	</article>
     <article class="2022 item-grid" style="position: relative;">
     	  <a class="article-content" href="https://architect-zigzag.ru/project-3.html">
-    	  	<div class="article-img"><img src="images/funduch.jpg" class="img-responsive" /></div>
+    	  	<div class="article-img"><img src="images/19_dom/01.jpg" class="img-responsive" /></div>
     	  	<div class="article-info">
     	  		Вилла на Фундучной
     	  		<span>280 м²</span>
@@ -182,7 +341,34 @@ var doneLoadPass=false;function loadJS(){var element = document.createElement("s
 </script>
 <script src='https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007849180/custom/page/hack-a-thon-3/isotope.min.js'></script>
 <script  src="js/gallery.js"></script>
+  <script>
+	  let button = document.getElementById('slide');
+	  button.onclick = function () {
+		  let container = document.getElementById('container');
+		  sideScroll(container,'right',25,100,10);
+	  };
 
+	  let back = document.getElementById('slideBack');
+	  back.onclick = function () {
+		  let container = document.getElementById('container');
+		  sideScroll(container,'left',25,100,10);
+	  };
+
+	  function sideScroll(element,direction,speed,distance,step){
+		  scrollAmount = 0;
+		  let slideTimer = setInterval(function(){
+			  if(direction == 'left'){
+				  element.scrollLeft -= step;
+			  } else {
+				  element.scrollLeft += step;
+			  }
+			  scrollAmount += step;
+			  if(scrollAmount >= distance){
+				  window.clearInterval(slideTimer);
+			  }
+		  }, speed);
+	  }
+  </script>
   <style>
 	  [data-tooltip] {
 		  position: relative; /* Относительное позиционирование */
@@ -204,6 +390,33 @@ var doneLoadPass=false;function loadJS(){var element = document.createElement("s
 		  opacity: 1; /* Показываем подсказку */
 		  /*top: 2em; !* Положение подсказки *!*/
 		  margin-top: 15px;
+	  }
+	  .button-group {
+		  width: 150px;
+		  overflow: auto;
+		  outline: none;
+		  overflow-y: hidden;
+		  padding-bottom: 15px;
+		  -ms-overflow-style: scroll;
+		  scrollbar-width: none;
+	  }
+	  .button-group::-webkit-scrollbar {
+		  display: none;
+	  }
+	  ul {
+		  display: flex;
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+	  }
+	  .slide_btn {
+		  border: none;
+		  background: transparent;
+		  color: #9d9d9d;
+		  padding-bottom: 15px;
+	  }
+	  .slide_btn:hover {
+		  color: black;
 	  }
   </style>
 
