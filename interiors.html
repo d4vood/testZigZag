@@ -24,6 +24,7 @@
 	<meta property="og:image" content="" />
 	<link rel="image_src" type="image/jpeg" href="" />
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<meta property="og:url" content="https://architect-zigzag.ru/" />
 	<meta property="og:description" content="Архитектурная студия ZigZag. Проектирование современных домов. | ZigZag" />
 	<meta property="og:site_name" content="www.architect-zigzag.ru" />
@@ -81,52 +82,82 @@
 <section id="content" style="overflow-y: hidden;">
 	<div class="container">
 		<div class="row row-line pad-top" style="overflow: hidden;">
-			  <h3 class="parallax">Дизайн интерьеров</h3>
+			<h3 class="parallax">Дизайн интерьеров</h3>
 
-				<div class="button-group filters-button-group">
-    <button class="button is-checked check-btn" data-filter="*">Все</button>
-    <button class="button" data-filter=".2021">2021</button>
-    <button class="button" data-filter=".2022">2022</button>
-</div>
+			<div class="btn_group">
+				<div style="display: flex; align-items: center">
+					<button id="slideBack" class="slide_btn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+					<div class="button-group filters-button-group" id="container">
+						<ul>
+							<button class="button is-checked check-btn" data-filter="*">Все</button>
+							<button class="button" data-filter=".2013">2013</button>
+							<button class="button" data-filter=".2015">2015</button>
+							<button class="button" data-filter=".2016">2016</button>
+							<button class="button" data-filter=".2019">2019</button>
+							<button class="button" data-filter=".2022">2022</button>
+						</ul>
+					</div>
+					<button id="slide" class="slide_btn" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+				</div>
 
-<section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
-    <article class="2021 item-grid" style="position: relative;">
-    	  <a class="article-content" href="https://architect-zigzag.ru/project-1.html">
-    	  	<div class="article-img"><img src="images/inter1.jpg" class="img-responsive" /></div>
-    	  	<div class="article-info">
-    	  		Дизайн 1
-    	  		<span>400 м²</span>
-    	  	</div>
-    	  </a>
-    </article>
-    <article class="2022 item-grid" style="position: relative;">
-        <a class="article-content" href="https://architect-zigzag.ru/project-2.html">
-    	  	<div class="article-img"><img src="images/inter2.jpg" class="img-responsive" /></div>
-    	  	<div class="article-info">
-    	  		Дизайн 2
-    	  		<span>400 м²</span>
-    	  	</div>
-    	  </a>
-    </article>
-    <article class="2022 item-grid" style="position: relative;">
-    	  <a class="article-content" href="https://architect-zigzag.ru/project-1.html">
-    	  	<div class="article-img"><img src="images/inter1.jpg" class="img-responsive" /></div>
-    	  	<div class="article-info">
-    	  		Дизайн 1
-    	  		<span>400 м²</span>
-    	  	</div>
-    	  </a>
-    </article>
-    <article class="2021 item-grid" style="position: relative;">
-        <a class="article-content" href="https://architect-zigzag.ru/project-2.html">
-    	  	<div class="article-img"><img src="images/inter2.jpg" class="img-responsive" /></div>
-    	  	<div class="article-info">
-    	  		Дизайн 2
-    	  		<span>400 м²</span>
-    	  	</div>
-    	  </a>
-    </article>
-</section>
+			</div>
+
+			<section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+				<article class="2013 item-grid" style="position: relative;">
+					<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+						<div class="article-img"><img src="images/01_int/01.jpg" class="img-responsive"/></div>
+						<div class="article-info">
+							Семейный дом в Новой Адыгее
+							<span>400 м²</span>
+						</div>
+					</a>
+				</article>
+				<article class="2015 item-grid" style="position: relative;">
+					<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+						<div class="article-img"><img src="images/02_int/01.jpg" class="img-responsive"/></div>
+						<div class="article-info">
+							Квартира Лайнер
+							<span>400 м²</span>
+						</div>
+					</a>
+				</article>
+				<article class="2016 item-grid" style="position: relative;">
+					<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+						<div class="article-img"><img src="images/03_int/02.jpg" class="img-responsive"/></div>
+						<div class="article-info">
+							Квартира на клубной дизайн
+							<span>400 м²</span>
+						</div>
+					</a>
+				</article>
+				<article class="2019 item-grid" style="position: relative;">
+					<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+						<div class="article-img"><img src="images/04_int/04.jpg" class="img-responsive"/></div>
+						<div class="article-info">
+							Два дома Хоста
+							<span>400 м²</span>
+						</div>
+					</a>
+				</article>
+				<article class="2019 item-grid" style="position: relative;">
+					<a class="article-content" href="https://architect-zigzag.ru/project-1.html">
+						<div class="article-img"><img src="images/05_int/06.png" class="img-responsive"/></div>
+						<div class="article-info">
+							Дом на берегу Кочеты
+							<span>400 м²</span>
+						</div>
+					</a>
+				</article>
+				<article class="2022 item-grid" style="position: relative;">
+					<a class="article-content" href="https://architect-zigzag.ru/project-2.html">
+						<div class="article-img"><img src="images/06_int/07.jpg" class="img-responsive"/></div>
+						<div class="article-info">
+							Лазаревская вилла
+							<span>400 м²</span>
+						</div>
+					</a>
+				</article>
+			</section>
 		</div>
 
 	</div>
@@ -175,8 +206,64 @@ var doneLoadPass=false;function loadJS(){var element = document.createElement("s
 <script type="text/javascript">
     setTimeout(function() { $('#grid-container').css('opacity', '1'); }, 2000);
 </script>
+  <script>
+	  let button = document.getElementById('slide');
+	  button.onclick = function () {
+		  let container = document.getElementById('container');
+		  sideScroll(container,'right',25,100,10);
+	  };
+
+	  let back = document.getElementById('slideBack');
+	  back.onclick = function () {
+		  let container = document.getElementById('container');
+		  sideScroll(container,'left',25,100,10);
+	  };
+
+	  function sideScroll(element,direction,speed,distance,step){
+		  scrollAmount = 0;
+		  let slideTimer = setInterval(function(){
+			  if(direction == 'left'){
+				  element.scrollLeft -= step;
+			  } else {
+				  element.scrollLeft += step;
+			  }
+			  scrollAmount += step;
+			  if(scrollAmount >= distance){
+				  window.clearInterval(slideTimer);
+			  }
+		  }, speed);
+	  }
+  </script>
 <script src='https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007849180/custom/page/hack-a-thon-3/isotope.min.js'></script>
 <script  src="js/gallery.js"></script>
-
+  <style>
+	  .button-group {
+		  width: 150px;
+		  overflow: auto;
+		  outline: none;
+		  overflow-y: hidden;
+		  padding-bottom: 15px;
+		  -ms-overflow-style: scroll;
+		  scrollbar-width: none;
+	  }
+	  .button-group::-webkit-scrollbar {
+		  display: none;
+	  }
+	  ul {
+		  display: flex;
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+	  }
+	  .slide_btn {
+		  border: none;
+		  background: transparent;
+		  color: #9d9d9d;
+		  padding-bottom: 15px;
+	  }
+	  .slide_btn:hover {
+		  color: black;
+	  }
+  </style>
   </body>
   </html>
